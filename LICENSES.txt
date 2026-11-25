@@ -5,17 +5,21 @@ LOWROAD 오픈소스·에셋 라이선스
 | 파일 | 출처 | 저작자 | 라이선스 |
 |---|---|---|---|
 | `fonts/Galmuri11.ttf`, `fonts/Galmuri7.ttf` | https://github.com/quiple/galmuri (v2.40.4) | Lee Minseo (quiple) | SIL Open Font License 1.1 (`fonts/OFL.txt`) |
-| `sprites/hero/`, `sprites/icons/road_*.png`, `sprites/enemies/`, `sprites/bosses/`, `sprites/allies/slime.png`, `bg/*/layer2.png`(수도원·서리·성 바닥) | [16x16 DungeonTileset II v1.7](https://0x72.itch.io/dungeontileset-ii) | 0x72 | CC0 1.0 |
+| `sprites/hero/`, `sprites/icons/road_chest.png`, `sprites/enemies/`, `sprites/bosses/`, `sprites/allies/slime.png`, `bg/*/layer2.png`(수도원·서리·성 바닥) | [16x16 DungeonTileset II v1.7](https://0x72.itch.io/dungeontileset-ii) | 0x72 | CC0 1.0 |
 | `bg/r1_meadow/` | [Country Side Platform Tiles](https://opengameart.org/content/country-side-platform-tiles) | ansimuz | CC0 |
+| `bg/r7_ashland/layer0~1` | [Gothicvania Junk Wasteland](https://opengameart.org/content/gothicvania-junk-wasteland-environment), `tools/import_wasteland.py`로 색을 바꿈 | ansimuz | CC0 |
 | `bg/r2_darkwood/` | [Forest Background](https://opengameart.org/content/forest-background) | ansimuz | CC0 |
 | `bg/r3_abbey/`, `bg/r4_frost/layer0`, `bg/r5_castle/layer0~1` | [Castle Platformer](https://opengameart.org/content/castle-platformer) | Jetrel | CC0 |
 | `bg/r4_frost/layer1` | [Generic Platformer Tileset (16x16) + Background](https://opengameart.org/content/generic-platformer-tileset-16x16-background) | etqws3 | CC0 |
-| `audio/sfx/` crit, fire*, lightning*, poison*, special_* | 직접 합성(`tools/make_sfx.py`). crit·special_*에는 아래 512 Sound Effects의 sword2·3을 섞음 | LOWROAD / Juhani Junkala | 자체 제작 / CC0 |
+| `audio/sfx/` crit, fire*, lightning*, poison*, special_*, ult_*, grace | 직접 합성(`tools/make_sfx.py`). crit·special_*에는 아래 512 Sound Effects의 sword2·3을 섞음 | LOWROAD / Juhani Junkala | 자체 제작 / CC0 |
 | `audio/sfx/` 나머지(slash_offhand = sfx_damage_hit4) | [512 Sound Effects (8-bit style)](https://opengameart.org/content/512-sound-effects-8-bit-style) | Juhani Junkala | CC0 |
 | `audio/bgm/` | [15 Melodic RPG Chiptunes](https://opengameart.org/node/144972) | Aureolus_Omicron | CC0 |
-| `sprites/fx/*`(hit_spark, crit_hit, poof, burning·burning_hot·burning_blue, zap_hit·zap_purple·zap_gold, bleeding·bleeding_dark·bleeding_black, slash_*, special_*, arrow, heal, shield_block), `sprites/pets/*` | [pixelfx](https://github.com/patch-gg/pixelfx) 라이브러리 이펙트를 렌더(hit-spark 일부는 Hugo Duprez의 Sprite Fusion impact에서 각색) | pixelfx 기여자 / Hugo Duprez | MIT |
-| `sprites/allies/falcon.png`, `sprites/allies/wolf.png` | 자체 제작(`tools/draw_allies.py`) | 자체 | 프로젝트 소유 |
+| `sprites/fx/*`(hit_spark, crit_hit, poof, burning·burning_hot·burning_blue, zap_hit·zap_purple·zap_gold, bleeding·bleeding_dark·bleeding_black, slash_*, special_*, ult_*, light_arrow, thrust, heal, shield_block), `sprites/pets/*` | [pixelfx](https://github.com/patch-gg/pixelfx) 라이브러리 이펙트를 렌더(hit-spark 일부는 Hugo Duprez의 Sprite Fusion impact에서 각색) | pixelfx 기여자 / Hugo Duprez | MIT |
+| `sprites/allies/falcon.png`, `sprites/allies/wolf.png`, `sprites/icons/gear_*.png`, `sprites/gear/*`, `sprites/fx/throne.png` | 자체 제작(`tools/draw_allies.py`, `tools/draw_gear.py`) | 자체 | 프로젝트 소유 |
 | `sprites/icons/sword_*.png`, `sprites/weapons/<검 id>.png` | [16x16 Weapon RPG Icons](https://opengameart.org/content/16x16-weapon-rpg-icons) | Shade | CC0 |
+| `sprites/icons/road_*.png`(chest 빼고) | [16x16 Fantasy RPG Characters](https://superdark.itch.io/16x16-free-npc-pack), `tools/import_npc.py` | Superdark | 무료(상업 사용·수정 가능, 표기 선택 — 작가 페이지 안내) |
+| `sprites/ui/*` | [Dark Ages UI v1.0](https://hypnobius.itch.io/dark-ages-ui), `tools/import_ui.py`로 자르고 버튼 색을 바꿈 | Hypnobius | 상업 사용·수정 가능, 에셋 묶음으로 재판매·재배포 금지, AI 학습 데이터 사용 금지 |
+| `sprites/portraits/*` | 프로젝트 소유자가 제공(2026-11-25 여신, 2026-11-26 talk_* 마왕·기사), 포즈·표정별로 자름(`tools/import_talk.py`) | 프로젝트 소유자 | AI 생성, 프로젝트 소유자 제공. 재배포 금지 |
 | `sprites/fx/level_up.png` | 자체 제작(`tools/pixelfx/level-up-mini.js`), [pixelfx](https://github.com/patch-gg/pixelfx) 엔진으로 렌더 | 자체 / pixelfx 기여자 | MIT (pixelfx) |
 
 배포 빌드에는 `fonts/OFL.txt`를 함께 넣고 크레딧에 "Galmuri by Lee Minseo"를 표기한다.
