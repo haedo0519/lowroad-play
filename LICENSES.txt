@@ -1,0 +1,272 @@
+LOWROAD 오픈소스·에셋 라이선스
+
+# 에셋 라이선스
+
+| 파일 | 출처 | 저작자 | 라이선스 |
+|---|---|---|---|
+| `fonts/Galmuri11.ttf`, `fonts/Galmuri7.ttf` | https://github.com/quiple/galmuri (v2.40.4) | Lee Minseo (quiple) | SIL Open Font License 1.1 (`fonts/OFL.txt`) |
+| `sprites/hero/`, `sprites/icons/road_*.png`, `sprites/enemies/`, `sprites/bosses/`, `sprites/allies/slime.png`, `bg/*/layer2.png`(수도원·서리·성 바닥) | [16x16 DungeonTileset II v1.7](https://0x72.itch.io/dungeontileset-ii) | 0x72 | CC0 1.0 |
+| `bg/r1_meadow/` | [Country Side Platform Tiles](https://opengameart.org/content/country-side-platform-tiles) | ansimuz | CC0 |
+| `bg/r2_darkwood/` | [Forest Background](https://opengameart.org/content/forest-background) | ansimuz | CC0 |
+| `bg/r3_abbey/`, `bg/r4_frost/layer0`, `bg/r5_castle/layer0~1` | [Castle Platformer](https://opengameart.org/content/castle-platformer) | Jetrel | CC0 |
+| `bg/r4_frost/layer1` | [Generic Platformer Tileset (16x16) + Background](https://opengameart.org/content/generic-platformer-tileset-16x16-background) | etqws3 | CC0 |
+| `audio/sfx/` crit, fire*, lightning*, poison*, special_* | 직접 합성(`tools/make_sfx.py`). crit·special_*에는 아래 512 Sound Effects의 sword2·3을 섞음 | LOWROAD / Juhani Junkala | 자체 제작 / CC0 |
+| `audio/sfx/` 나머지(slash_offhand = sfx_damage_hit4) | [512 Sound Effects (8-bit style)](https://opengameart.org/content/512-sound-effects-8-bit-style) | Juhani Junkala | CC0 |
+| `audio/bgm/` | [15 Melodic RPG Chiptunes](https://opengameart.org/node/144972) | Aureolus_Omicron | CC0 |
+| `sprites/fx/*`(hit_spark, crit_hit, poof, burning·burning_hot·burning_blue, zap_hit·zap_purple·zap_gold, bleeding·bleeding_dark·bleeding_black, slash_*, special_*, arrow, heal, shield_block), `sprites/pets/*` | [pixelfx](https://github.com/patch-gg/pixelfx) 라이브러리 이펙트를 렌더(hit-spark 일부는 Hugo Duprez의 Sprite Fusion impact에서 각색) | pixelfx 기여자 / Hugo Duprez | MIT |
+| `sprites/allies/falcon.png`, `sprites/allies/wolf.png` | 자체 제작(`tools/draw_allies.py`) | 자체 | 프로젝트 소유 |
+| `sprites/icons/sword_*.png`, `sprites/weapons/<검 id>.png` | [16x16 Weapon RPG Icons](https://opengameart.org/content/16x16-weapon-rpg-icons) | Shade | CC0 |
+| `sprites/fx/level_up.png` | 자체 제작(`tools/pixelfx/level-up-mini.js`), [pixelfx](https://github.com/patch-gg/pixelfx) 엔진으로 렌더 | 자체 / pixelfx 기여자 | MIT (pixelfx) |
+
+배포 빌드에는 `fonts/OFL.txt`를 함께 넣고 크레딧에 "Galmuri by Lee Minseo"를 표기한다.
+
+CC0 에셋은 표기 의무가 없지만 크레딧에 저작자 이름을 넣는다. 스프라이트·배경은 `tools/import_art.py`로 잘라 붙이거나 색을 바꿨다(원본 zip은 저장소에 넣지 않음).
+
+===== Galmuri (SIL OFL 1.1)
+Copyright (c) 2019–2025 Lee Minseo (quiple@quiple.dev)
+
+This font software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+===== pixelfx (MIT)
+MIT License
+
+Copyright (c) 2026 Patch
+Copyright (c) 2026 Hugo Duprez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+=====GODOT
+Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md).
+Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+=====THIRD
+Godot Engine — 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat)
+Bullet Continuous Collision Detection and Physics Library — 2011, Ole Kniemeyer, MAXON, www.maxon.net, 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat and Zlib)
+Bullet Continuous Collision Detection and Physics Library — 2003-2008, Erwin Coumans, 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat and Zlib)
+Bullet Continuous Collision Detection and Physics Library — 2007, Starbreeze Studios, 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat and Zlib)
+Linux AppStream Metadata File — 2017-2022, Rémi Verschelde (CC0-1.0)
+Godot Engine logo — 2017, Andrea Calabró (CC-BY-4.0)
+Betsy — 2020-2022, Matias N. Goldberg (Expat)
+Chipmunk2D Joint Constraints — 2007, Scott Lembcke (Expat)
+Open Dynamics Engine — 2001-2003, Russell L. Smith, Alen Ladavac, Nguyen Binh (BSD-3-clause)
+Jolt Physics — 2021, Jorrit Rouwe, 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat)
+Jolt Physics — 2021, Jorrit Rouwe (Expat)
+Joint Non-Local Means (JNLM) denoiser — 2020, Manuel Prandini, 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat)
+The Android Open Source Project — 2008-2016, The Android Open Source Project, 2002, Google, Inc. (Apache-2.0)
+ProcessPhoenix — 2015, Jake Wharton (Apache-2.0)
+Robert Penner's Easing Functions — 2001, Robert Penner, 2014-present, Godot Engine contributors, 2007-2014, Juan Linietsky, Ariel Manzur (Expat)
+NVidia's FXAA 3.11, simplified by Simon Rodriguez — 2014-2015, NVIDIA CORPORATION, 2017 Simon Rodriguez (BSD-3-clause and Expat)
+Intel ASSAO and related files — 2016, Intel Corporation (Expat)
+Temporal Anti-Aliasing resolve implementation — 2016, Panos Karabelas (Expat)
+Subpixel Morphological Antialiasing — 2013, Jorge Jimenez, 2013, Jose I. Echevarria, 2013, Belen Masia, 2013, Fernando Navarro, 2013, Diego Gutierrez (Expat)
+AccessKit — 2023, The AccessKit Authors. (Expat)
+AMD FidelityFX Super Resolution — 2021, Advanced Micro Devices, Inc. (Expat)
+AMD FidelityFX Super Resolution 2 — 2022-2023, Advanced Micro Devices, Inc. (Expat)
+ANGLE — 2018, The ANGLE Project Authors. (BSD-3-clause)
+Arm ASTC Encoder — 2011-2025, Arm Limited (Apache-2.0)
+Basis Universal — 2019-2025, Binomial LLC. (Apache-2.0)
+Brotli — 2009, 2010, 2013-2016 by the Brotli Authors. (Expat)
+CA certificates — Mozilla Contributors (MPL-2.0)
+Clipper2 — 2010-2025, Angus Johnson (BSL-1.0)
+Convection Texture Tools Stand-Alone Kernels — 2018, Eric Lasota, 2018, Microsoft Corp. (Expat)
+D3D12 Memory Allocator — 2019-2022 Advanced Micro Devices, Inc. (Expat)
+DirectX Headers — Microsoft Corporation (Expat)
+doctest — 2016-2023, Viktor Kirilov (Expat)
+dr_libs — 2020, David Reid (Unlicense or MIT-0)
+Embree — 2009-2021 Intel Corporation (Apache-2.0)
+ENet — 2002-2024, Lee Salzman (Expat)
+etcpak — 2013-2022, Bartosz Taudul (BSD-3-clause)
+DroidSans font — 2008, The Android Open Source Project (Apache-2.0)
+Inter font — 2016, The Inter Project Authors (OFL-1.1)
+JetBrains Mono font — 2020, JetBrains s.r.o. (OFL-1.1)
+Noto Sans font — 2012, Google Inc. (OFL-1.1)
+Open Sans font — 2020, The Open Sans Project Authors (OFL-1.1)
+Vazirmatn font — 2015, The Vazirmatn Project Authors. (OFL-1.1)
+The FreeType Project — 1996-2025, David Turner, Robert Wilhelm, and Werner Lemberg. (FTL)
+GamepadMotionHelpers — 2020-2023, Julian "Jibb" Smart (Expat)
+glad — 2013-2022, David Herberth, 2013-2020, The Khronos Group Inc. (CC0-1.0 and Apache-2.0)
+glslang — 2015-2020, Google, Inc., 2014-2020, The Khronos Group Inc, 2002, NVIDIA Corporation. (glslang)
+Graphite engine — 2010, SIL International (Expat)
+Grisu2 float serialization algorithm — 2009, Florian Loitsch, 2018-2023, The simdjson authors (Expat and Apache-2.0)
+HarfBuzz text shaping library — 2010-2022, Google, Inc., 2015-2020, Ebrahim Byagowi, 2019,2020, Facebook, Inc., 2012, 2015, Mozilla Foundation, 2011, Codethink Limited, 2008, 2010, Nokia Corporation and/or its subsidiary(-ies), 2009, Keith Stribley, 2011, Martin Hosken and SIL International, 2007, Chris Wilson, 2005-2006, 2020-2023, Behdad Esfahbod, 2004, 2007-2010, 2013, 2021-2023, Red Hat, Inc., 1998-2005, David Turner and Werner Lemberg, 2016, Igalia, S.L., 2022, Matthias Clasen, 2018, 2021, Khaled Hosny, 2018-2020, Adobe, Inc., 2013-2015, Alexei Podtelezhnikov (HarfBuzz)
+International Components for Unicode — 2016-2024, Unicode, Inc. (Unicode)
+libbacktrace — 2012-2021, Free Software Foundation, Inc. (BSD-3-clause)
+libjpeg-turbo — 2009-2025, D. R. Commander, 2015, Viktor Szathmáry., 1991-2020, Thomas G. Lane, Guido Vollbeding (BSD-3-clause and IJG)
+KTX — 2013-2020, Mark Callow, 2010-2020 The Khronos Group, Inc. (Apache-2.0)
+OggVorbis — 2002, Xiph.org Foundation (BSD-3-clause)
+OggVorbis — 2002-2015, Xiph.org Foundation (BSD-3-clause)
+libpng — 1995-2026, The PNG Reference Library Authors., 2018-2026, Cosmin Truta., 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson., 1996-1997, Andreas Dilger., 1995-1996, Guy Eric Schalnat, Group 42, Inc. (Zlib)
+OggTheora — 2002-2009, Xiph.org Foundation (BSD-3-clause)
+WebP codec — 2010, Google Inc. (BSD-3-clause)
+Manifold — 2020-2025, The Manifold Authors (Apache-2.0)
+Mbed TLS — The Mbed TLS Contributors (Apache-2.0)
+meshoptimizer — 2016-2026, Arseny Kapoulkine (Expat)
+metal-cpp — 2024, Apple Inc. (Apache-2.0)
+mingw-std-threads — 2016, Mega Limited (BSD-2-clause)
+MiniUPnP Project — 2005-2025, Thomas Bernard (BSD-3-clause)
+MiniZip — 1998-2026, Gilles Vollant, 2007-2008, Even Rouault, 2009-2010, Mathias Svensson (Zlib)
+bcdec — 2022, Sergii Kudlai (Expat)
+Fast Filtering of Reflection Probes — 2016, Activision Publishing, Inc. (Expat)
+FastLZ — 2005-2020, Ariya Hidayat (Expat)
+FastNoise Lite — 2023, Jordan Peck and contributors (Expat)
+libjingle — 2012-2013, Google Inc. (BSD-3-clause)
+Tangent Space Normal Maps implementation — 2011, Morten S. Mikkelsen (Zlib)
+NVIDIA NVAPI (minimal excerpt) — 2019-2022, NVIDIA Corporation (Expat)
+OK Lab color space — 2021, Björn Ottosson (Expat)
+Minimal PCG32 implementation — 2014, M.E. O'Neill (Apache-2.0)
+PolyPartition / Triangulator — 2011-2021, Ivan Fratric and contributors (Expat)
+Quite OK Audio Format — 2023, Dominic Szablewski (Expat)
+r128 library — Alan Hickman (Unlicense)
+SMAZ — 2006-2009, Salvatore Sanfilippo (BSD-3-clause)
+SMOL-V — 2016-2024, Aras Pranckevicius (Unlicense or Expat)
+stb libraries — Sean Barrett (Unlicense or Expat)
+YUV2RGB — 2008-2011, Robin Watts (BSD-2-clause)
+Multi-channel signed distance field generator — 2014-2025, Viktor Chlumsky (Expat)
+OpenXR Loader — 2020-2025, The Khronos Group Inc. (Apache-2.0)
+PCRE2 — 1997-2024, University of Cambridge, 2009-2024, Zoltan Herczeg (BSD-3-clause)
+Recast — 2009, Mikko Mononen (Zlib)
+RVO2 — 2016, University of North Carolina at Chapel Hill (Apache-2.0)
+SDL — 1997-2025, Sam Lantinga (Zlib)
+hidapi — 2010, Alan Ott, Signal 11 Software (BSD-3-clause)
+SPIRV-Cross — 2015-2021, Arm Limited (Apache-2.0 or Expat)
+SPIRV-Headers — 2015-2024, The Khronos Group Inc. (Expat)
+SPIRV-Reflect — 2017-2022, Google Inc. (Apache-2.0)
+Swappy — 2019, The Android Open Source Project (Apache-2.0)
+ThorVG — 2020-2026, The ThorVG Project (Expat)
+TinyEXR — 2014-2021, Syoyo Fujita, 2002, Industrial Light & Magic, a division of Lucas Digital Ltd. LLC (BSD-3-clause)
+ufbx — 2020, Samuli Raivio (Expat)
+V-HACD — 2011, Khaled Mamou, 2003-2009, Erwin Coumans (BSD-3-clause)
+volk — 2018-2025, Arseny Kapoulkine (Expat)
+Vulkan Headers — 2015-2025, The Khronos Group Inc., 2015-2025, Valve Corporation, 2015-2025, LunarG, Inc. (Apache-2.0)
+Vulkan Memory Allocator — 2017-2025, Advanced Micro Devices, Inc. (Expat)
+Wayland core protocol — 2008-2012, Kristian Høgsberg, 2010-2012, Intel Corporation, 2011, Benjamin Franzke, 2012, Collabora, Ltd. (Expat)
+Wayland protocols — 2008-2013, Kristian Høgsberg, 2010-2013, Intel Corporation, 2013, Rafael Antognolli, 2013, Jasper St. Pierre, 2014, Jonas Ådahl, 2014, Jason Ekstrand, 2014-2015, Collabora, Ltd., 2015, Red Hat Inc. (Expat)
+Mesa Wayland protocols — 2008-2011, Kristian Høgsberg, 2010-2011, Intel Corporation (X11)
+Wslay — 2011, 2012, 2015, Tatsuhiro Tsujikawa (Expat)
+xatlas — 2018-2020, Jonathan Young, 2013, Thekla, Inc, 2006, NVIDIA Corporation, Ignacio Castano (Expat)
+zlib — 1995-2026, Jean-loup Gailly and Mark Adler (Zlib)
+Zstandard — Meta Platforms, Inc. and affiliates. (BSD-3-clause)
