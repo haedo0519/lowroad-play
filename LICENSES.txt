@@ -4,8 +4,8 @@ LOWROAD 오픈소스·에셋 라이선스
 
 | 파일 | 출처 | 저작자 | 라이선스 |
 |---|---|---|---|
-| `fonts/Galmuri11.ttf`, `fonts/Galmuri7.ttf` | https://github.com/quiple/galmuri (v2.40.4) | Lee Minseo (quiple) | SIL Open Font License 1.1 (`fonts/OFL.txt`) |
-| `sprites/hero/`, `sprites/icons/road_chest.png`, `sprites/enemies/`, `sprites/bosses/`, `sprites/allies/slime.png`, `bg/*/layer2.png`(수도원·서리·성 바닥) | [16x16 DungeonTileset II v1.7](https://0x72.itch.io/dungeontileset-ii) | 0x72 | CC0 1.0 |
+| `fonts/Galmuri11.ttf`, `fonts/Galmuri11-Bold.ttf`, `fonts/Galmuri14.ttf`, `fonts/Galmuri7.ttf` | https://github.com/quiple/galmuri (v2.40.4) | Lee Minseo (quiple) | SIL Open Font License 1.1 (`fonts/OFL.txt`) |
+| `sprites/hero/`, `sprites/icons/road_chest.png`, `sprites/icons/coins.png`(금화 색 바꿈), `sprites/icons/potions.png`(물약병 색 바꿈), `sprites/enemies/`, `sprites/bosses/`, `sprites/allies/slime.png`, `bg/*/layer2.png`(수도원·서리·성 바닥) | [16x16 DungeonTileset II v1.7](https://0x72.itch.io/dungeontileset-ii) | 0x72 | CC0 1.0 |
 | `bg/r1_meadow/` | [Country Side Platform Tiles](https://opengameart.org/content/country-side-platform-tiles) | ansimuz | CC0 |
 | `bg/r7_ashland/layer0~1` | [Gothicvania Junk Wasteland](https://opengameart.org/content/gothicvania-junk-wasteland-environment), `tools/import_wasteland.py`로 색을 바꿈 | ansimuz | CC0 |
 | `bg/r2_darkwood/` | [Forest Background](https://opengameart.org/content/forest-background) | ansimuz | CC0 |
